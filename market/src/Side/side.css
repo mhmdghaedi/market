@@ -1,0 +1,51 @@
+.side{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 250;
+    background-color: #a0a0a0;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    transition: transform 0.4s ease-out;
+}
+.men{
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+.menu-i{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.hide{
+    display: none;
+}
+.logo-side{
+    display: block;
+    color: rgb(0, 0, 0);
+    
+}
+.logo-side span{
+    display: inline-block;
+}
+.btn-side{
+    float: left;
+}
+@media(min-width:650px){
+    .side{
+        display: none;
+    }
+}
+.Open{
+  
+   transform: translateX(0);
+}
+.Close{
+    display: none;
+    transform: translateX(100%);
+}
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");

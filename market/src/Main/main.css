@@ -1,0 +1,46 @@
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  .slider-images {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+  
+  .image.active {
+    opacity: 1;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .slider-controls button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .slider-controls button:hover {
+    background-color: #ccc;
+  }

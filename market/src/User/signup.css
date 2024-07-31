@@ -1,0 +1,55 @@
+.Signup{
+    padding-top: 0px;
+}
+
+.input-s{
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0px auto;
+    margin-bottom: 5px;
+}
+.h-s{
+    color: black;
+    float: left;
+    margin-left: 20px;
+    font-size: smaller;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.captcha_view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    width: 90%;
+    margin-top: 30px;
+}
+.captcha_view input{
+    width: 60%;
+}
+.pa{
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    direction: ltr;
+    padding: 0px 5px;
+    margin: 0px;
+}
+@media(max-width: 600px){
+    .captcha_view > input{
+        width: 60%;
+    }
+    .captcha_view{
+        margin: 3px;
+
+    }
+}  
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
