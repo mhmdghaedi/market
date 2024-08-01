@@ -19,7 +19,7 @@ const Product = (props) => {
       </div>
       <div className="product-actions">
       { isInCart && <button className="remove" onClick={()=>removeFromCart(id)}>delete</button> }
-      <span className='mx-1'>{cartItems?.filter((row)=>row.id === id)[0]?.count}</span>
+      <span className='mx'>{cartItems?.filter((row)=>row.id === id)[0]?.count}</span>
 
         <button onClick={()=> addToCart(id)} className="add-to-cart">افزودن به سبد خرید</button>
 

@@ -9,10 +9,10 @@ function Cart({ cart, removeFromCart }) {
       <React.Fragment>
         <h2>Basket Shopping</h2>
         <div className="row">
-          {Products.map((p)=>{
+          {Products.map((p) =>{
             if(cartItems.some((i)=>i.id === p.id && i.count > 0))
               return(
-            <Product date={p}>
+            <Product data={p}>
               
             </Product>
             )

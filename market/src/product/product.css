@@ -89,6 +89,10 @@
   .hide{
     display: none;
   }
+  .mx{
+    font-weight: bold;
+    font-size: larger;
+  }
 
 
 
