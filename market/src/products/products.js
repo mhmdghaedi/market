@@ -1,50 +1,36 @@
-import React, { useState }  from 'react';
-import Product from '../product/product';
-const Products = () => {
-  const [cart, setCart] = useState([]);
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-    console.log(cart);
-  };
-  const products = [
+import shoes from '../image/kafsh.jpg';
+import ip from '../image/iphone11.jpg';
+import laptap from '../image/laptap.jpg';
+import masazh from '../image/masazh.jpg';
+const Products =  [
     {
       id: 1,
       name:  'کفش مردانه',
       price: 2000000,
-      image: require('../image/kafsh.jpg'),
+      image: shoes,
       description: 'کفش روزمره مردانه سایز 41-42-43-44',
     },
     {
       id: 2,
       name: " tuf لپ تاپ ",
       price: 35000000 ,
-      image: require('../laptap.jpg') ,
+      image: laptap ,
       description: ' tuf لپ تاپ گیمینگ ',
     },
     {
         id: 3,
         name: ' iphone11 گوشی ',
         price: 40000000,
-        image: require('../image/iphone11.jpg'),
+        image: ip ,
         description: 'آیفون 11 حافظه 128 تک سیمکارت',
       },
       {
         id: 4,
         name: 'ماساژور برقی',
         price: 550000,
-        image: require('../image/masazh.jpg'),
+        image: masazh,
         description: 'ماساژور برقی با نوع ماساژ لرزشی-ضربه ای-حرکتی',
       },
-  ];
-
-  return (
-    <div>
-      {products.map((products) => (
-        <Product key={products.id} product={products} addToCart={addToCart} />
-      ))}
-    </div>
-  );
-};
-
-export default Products;
+  ]
+export default Products;  

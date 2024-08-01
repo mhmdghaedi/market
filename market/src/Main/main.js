@@ -1,11 +1,18 @@
 import React  from "react";
 import './main.css';
-import Products from '../products/products'
-function Main() {
+import Products from '../Products/products';
+import Product from "../product/product";
+const Main = () => {
     return(
-        <div className="Main">
-            <Products/>
-        </div>
+        <React.Fragment>
+            <div className="Main">
+                {Products.map((productData)=>{
+                    return(
+                        <Product key={productData.id} data={productData}/>
+                    )
+                })}
+            </div>
+        </React.Fragment>
     );
 }
 export default Main;
